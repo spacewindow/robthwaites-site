@@ -1,0 +1,21 @@
+ErrorDocument 404 /404
+
+RewriteEngine on
+
+# automatically forwards all http://www.robthwaites.com requests to http://robthwaites.com
+
+RewriteCond %{HTTP_HOST} ^www\.robthwaites\.com$
+RewriteRule ^(.*)$ http://robthwaites.com/$1 [R=301,L]
+
+# This rewrite was unnecessary as Wordpress deails with it in the sub-folder. This broke my URLs and didn't work also. Annoying.
+#RewriteCond %{REQUEST_URI} ^contactinsydney
+
+# Stops rewrite rules being mistakenly applied to existing files and directories
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Makes all URL substring requests look for their .php file counterpart
+
+
+RewriteRule ^([0-9a-z]+)$ $1.php
