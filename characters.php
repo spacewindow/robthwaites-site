@@ -1,6 +1,6 @@
 <?php include 'header.php'; ?>
-<title>Motherboard Website - Rob Thwaites - Web &amp; Graphic Design</title>
-<link rel="canonical" href="http://robthwaites.com/motherboard" />
+<title>Animated Characters - Rob Thwaites - Web &amp; Graphic Design</title>
+<link rel="canonical" href="http://robthwaites.com/characters" />
 <?php include 'header2.php'; ?>
 
 	<div class="presentation">
@@ -13,10 +13,15 @@
 				<a class="next" href="diggin" title="Diggin Deeper: Edible Garden Festival">&rsaquo;</a>
 			</nav>
 
-
-							<h1>Motherboard Website</h1>
-							<h2 class="client">Motherboard Productions</h2>
-
+			<div class="title motherboard">
+				<div class="box-container">
+					<div class="box">
+							<span>Animated Characters</span>
+							<span>Web Design and Development</span>
+							<span class="client">Playground XYZ</span>
+					</div>
+				</div>
+			</div>
 
 			<div class="caption lead">
 				<p>The producers at Motherboard needed a new website that would take advantage of new web technologies and better represent the variety of work the company engages in.</p>
